@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function checkString(st1,st2){
+    let a;
+    let b;
+    for (let a = 0; a < st2.length; a++) {
+      for (let b = 0; b <st1.length ; b++) {
+        if(st1[b]==st2[a+b]){
+          continue
+        }else {break}
+
+      }if (b==st1.length){return true}
+      
+    }return false
+  }
+  document.writeln(checkString("code","gym"))
+</script>
+
+</body>
+</html>

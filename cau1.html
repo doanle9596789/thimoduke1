@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let product = [1,2,3,4,5,6,7,8,9,10,11];
+    let max = product[0];
+    let index1 = 0;
+    for (let i = 1; i < product.length; i++) {
+        if (product[i] > max) {
+            max = product[i];
+            index1 = i;
+        }
+    }
+    product[index1] = 0;
+    let max1 = product[0];
+    let index2 = 0;
+    for (let i = 1; i < product.length; i++) {
+        if (product[i] > max1) {
+            max1 = product[i];
+            index2 = i;
+        }
+    }
+    product[index2] = 0;
+    let max2 = product[0];
+    for (let i = 1; i < product.length; i++) {
+        if (product[i] > max2) {
+            max2 = product[i];
+        }
+    }
+    document.writeln("Point lớn thứ 3 trong dãy số là: " + max2);
+
+
+</script>
+
+</body>
+</html>
